@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Gregory Casanova">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Google Font -->
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a236162b1f.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Gambito de Goyo</title>
+</head>
+
+<body class="bg-light bg-gradient">
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="#">Gambito de Goyo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Rules</a>
+          <a class="nav-link" href="#">About me</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="URL-form" class="container-fluid">
+    <div class="d-flex justify-content-center w-100">
+      <form class="w-25">
+        <div class="mb-3">
+          <label for="url" class="form-label">Share URL to play.</label>
+          <input type="text" class="form-control" id="url">
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">Play</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="game" class="container-fluid px-5">
+    <div class="d-flex pt-3">
+      <main class="me-3">
+        <div class="board">
+
+        </div>
+      </main>
+      <aside class="flex-grow-1 d-flex flex-column flex-wrap" style="height: 85vh;">
+        <div class="scoresheet flex-fill mb-3">
+
+          <div class="card h-100">
+            <div class="card-header">
+              Scoresheet
+            </div>
+            <div class="card-body overflow-auto p-0">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <div class="rw-ff-controls d-flex flex-row justify-content-around">
+                <div class="rw">
+                  <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="ff">
+                  <i class="fas fa-step-forward"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="clock d-flex justify-content-center align-items-center">
+          <div class="clock__timer">
+            <p><span class="hours">0</span> : <span class="minutes">20</span> <span class="seconds">00</span></p>
+          </div>
+
+        </div>
+        <div class="piece-case d-flex flex-column ps-3">
+          <div class="case flex-grow-1 mb-3 bg-secondary bg-gradient">
+
+          </div>
+          <div class="case flex-grow-1 mb-3 bg-secondary bg-gradient">
+
+          </div>
+        </div>
+        <div class="draw-resign-buttons ps-3">
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Draw</button>
+            <button class="btn btn-primary" type="button">Resign</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap/dist/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+  <!-- JS -->
+  <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+  <script src="assets/js/display-board.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/functions.js"></script> -->
+  <!--<script type="module" src="assets/js/script.js"></script>-->
+</body>
+
+</html>

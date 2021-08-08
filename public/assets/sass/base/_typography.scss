@@ -1,0 +1,19 @@
+/*@font-face {
+  font-family: "Digital-7";
+  src: url('/digital-7.ttf') format('truetype');
+}*/
+
+.clock {
+  //font-family: "Digital-7", monospace;
+  font-size: 4.5rem;
+  line-height: 0.75;
+  &__timer {
+    p {
+      margin-bottom: 0;
+      padding-bottom: 0.55rem;
+    }
+    & .seconds {
+      font-size: 3.25rem;
+    }
+  }
+}
